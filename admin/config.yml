@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  # TODO: reemplazar estos dos valores con los que entrega DecapBridge
+  # al crear el "Site" en https://decapbridge.com y conectarlo con este repo de GitHub.
+  identity_url: https://TU-SITIO.decapbridge.com/identity
+  gateway_url: https://TU-SITIO.decapbridge.com/gateway
+  branch: main
+
+# Netlify sirve estos archivos estáticos directamente (sin build), por eso publish_mode
+# no aplica un generador de sitio: el JSON editado se lee en vivo desde js/main.js.
+publish_mode: simple
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "sitio"
+    label: "Contenido del sitio"
+    files:
+      - name: "principal"
+        label: "Contenido principal"
+        file: "content/site.json"
+        fields:
+          - label: "Empresa"
+            name: "company"
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Eslogan", name: "tagline", widget: "string" }
+              - { label: "NIT", name: "nit", widget: "string" }
+
+          - label: "Portada (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto botón WhatsApp", name: "cta_primary", widget: "string" }
+              - { label: "Texto botón servicios", name: "cta_secondary", widget: "string" }
+
+          - label: "Sobre nosotros"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+          - { label: "Misión", name: "mission", widget: "text" }
+          - { label: "Visión", name: "vision", widget: "text" }
+
+          - label: "Servicios"
+            name: "services"
+            widget: "list"
+            label_singular: "Servicio"
+            summary: "{{title}}"
+            fields:
+              - label: "Ícono"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "Rayo (eléctrico)", value: "bolt" }
+                  - { label: "Red (telecomunicaciones)", value: "network" }
+                  - { label: "Escudo (control de acceso)", value: "shield" }
+                  - { label: "Llama (incendios)", value: "flame" }
+                  - { label: "Cámara (video vigilancia)", value: "camera" }
+                  - { label: "Servidor (datacenter)", value: "server" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+
+          - label: "Contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Dirección", name: "address", widget: "string" }
+              - { label: "Correo", name: "email", widget: "string" }
+              - { label: "Teléfono (texto a mostrar)", name: "phone_display", widget: "string" }
+              - label: "WhatsApp (solo números, con código de país, ej. 573153539092)"
+                name: "whatsapp_number"
+                widget: "string"
+                pattern: ['^\d+$', "Solo números, sin espacios ni símbolos"]
+              - { label: "Nombre de contacto", name: "contact_name", widget: "string" }
+              - { label: "Cargo", name: "contact_role", widget: "string" }

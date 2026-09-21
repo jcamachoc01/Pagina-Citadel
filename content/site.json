@@ -1,0 +1,59 @@
+{
+  "company": {
+    "name": "CIDATEL S.A.S.",
+    "tagline": "Soluciones Integrales en Infraestructura",
+    "nit": "900.931.795-5"
+  },
+  "hero": {
+    "title": "Soluciones Integrales en Infraestructura",
+    "subtitle": "Diseño, construcción, consultoría y mantenimiento en Ingeniería Eléctrica, Telecomunicaciones y Seguridad Electrónica para proyectos industriales, comerciales, residenciales e institucionales.",
+    "cta_primary": "Cotiza tu proyecto por WhatsApp",
+    "cta_secondary": "Ver servicios"
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "text": "Somos una empresa 100% colombiana constituida en 2016, dedicada al diseño, construcción, consultoría y mantenimiento de proyectos en el ámbito Eléctrico y de las Telecomunicaciones, integrando soluciones informáticas pasivas y activas, y el software acorde a las necesidades de cada cliente. Trabajamos con honestidad, respeto y cumplimiento para forjar alianzas perdurables en el tiempo."
+  },
+  "mission": "Ofrecer a nuestros clientes soluciones integrales, efectivas y confiables en Ingeniería Eléctrica, Telecomunicaciones y Tecnologías de Información, cumpliendo sus expectativas a través de un equipo humano capacitado, con el compromiso permanente del mejoramiento continuo en todos nuestros procesos.",
+  "vision": "Ser una empresa reconocida por sus mejores prácticas y líder en el mercado de los servicios profesionales de Ingeniería Eléctrica, Telecomunicaciones y Tecnologías de Información, con un equipo humano talentoso, idóneo y comprometido con la familia CIDATEL S.A.S.",
+  "services": [
+    {
+      "icon": "bolt",
+      "title": "Sistema Eléctrico",
+      "description": "Instalaciones eléctricas internas de baja y media tensión para ambientes industriales, comerciales y residenciales."
+    },
+    {
+      "icon": "network",
+      "title": "Telecomunicaciones",
+      "description": "Cableado estructurado en cobre y fibra óptica para voz, datos y video, bajo normas ISO/IEC y ANSI/EIA/TIA, con certificación de cada línea instalada."
+    },
+    {
+      "icon": "shield",
+      "title": "Control de Acceso",
+      "description": "Control de acceso peatonal y vehicular con lectoras de proximidad, biométricas, torniquetes y talanqueras, con registro detallado de ingresos y egresos."
+    },
+    {
+      "icon": "flame",
+      "title": "Detección de Incendios",
+      "description": "Detección automática de humo, calor y llama, con notificación y alarma mediante luces estroboscópicas, sirenas y campanas."
+    },
+    {
+      "icon": "camera",
+      "title": "Video Vigilancia",
+      "description": "Sistemas de CCTV análogos e IP, alámbricos e inalámbricos, con monitoreo local y remoto desde cualquier parte del mundo."
+    },
+    {
+      "icon": "server",
+      "title": "Datacenter y Equipos Activos",
+      "description": "Suministro, montaje y mantenimiento de switches, routers, servidores, UPS y plantas eléctricas, incluyendo diseño de datacenter."
+    }
+  ],
+  "contact": {
+    "address": "Calle 135 A No. 104 - 28 Of. 303, Bogotá, Colombia",
+    "email": "jcamacho@cidatel.co",
+    "phone_display": "315 353 9092",
+    "whatsapp_number": "573153539092",
+    "contact_name": "Javier Camacho",
+    "contact_role": "Gerente General"
+  }
+}

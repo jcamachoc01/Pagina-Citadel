@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tu Nombre — Portafolio</title>
-  <meta name="description" content="Portafolio de Tu Nombre: proyectos, habilidades y contacto." />
+  <title>CIDATEL S.A.S. — Soluciones Integrales en Infraestructura</title>
+  <meta name="description" content="CIDATEL S.A.S.: diseño, construcción, consultoría y mantenimiento en Ingeniería Eléctrica, Telecomunicaciones y Seguridad Electrónica en Bogotá, Colombia." />
   <link rel="icon" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -12,13 +12,12 @@
 
   <header class="site-header">
     <nav class="nav container">
-      <a href="#inicio" class="logo">Tu Nombre</a>
+      <a href="#inicio" class="logo">CID<span class="logo-accent">@</span>TEL <span class="logo-sas">SAS</span></a>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -26,91 +25,89 @@
 
   <main>
     <!-- HERO -->
-    <section id="inicio" class="hero container">
-      <div class="hero-text">
-        <h1>Hola, soy <span class="highlight">Tu Nombre</span></h1>
-        <p class="subtitle">TODO: frase corta describiendo qué haces (ej. "Desarrollador Web / Ingeniero en formación")</p>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <h1 id="hero-title">Cargando…</h1>
+        <p class="subtitle" id="hero-subtitle"></p>
         <div class="hero-actions">
-          <a href="assets/docs/cv.pdf" class="btn btn-primary" download>Descargar CV</a>
-          <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+          <a href="#" id="hero-whatsapp" class="btn btn-primary" target="_blank" rel="noopener">Cotiza tu proyecto por WhatsApp</a>
+          <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="assets/img/perfil-placeholder.png" alt="Foto de perfil" />
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="section container">
+      <h2 id="about-title">Quiénes somos</h2>
+      <p id="about-text"></p>
+
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Misión</h3>
+          <p id="mission-text"></p>
+        </div>
+        <div class="mv-card">
+          <h3>Visión</h3>
+          <p id="vision-text"></p>
+        </div>
       </div>
     </section>
 
-    <!-- SOBRE MI -->
-    <section id="sobre-mi" class="section container">
-      <h2>Sobre mí</h2>
-      <p>
-        TODO: breve biografía (2-4 líneas). Quién eres, qué estudias/trabajas,
-        qué te apasiona y qué tipo de proyectos buscas.
-      </p>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section container">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <img src="assets/img/proyecto-placeholder.png" alt="Nombre del proyecto 1" />
-          <h3>TODO: Nombre del proyecto</h3>
-          <p>TODO: descripción corta del proyecto y tecnologías usadas.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Ver demo</a>
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/img/proyecto-placeholder.png" alt="Nombre del proyecto 2" />
-          <h3>TODO: Nombre del proyecto</h3>
-          <p>TODO: descripción corta del proyecto y tecnologías usadas.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Ver demo</a>
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/img/proyecto-placeholder.png" alt="Nombre del proyecto 3" />
-          <h3>TODO: Nombre del proyecto</h3>
-          <p>TODO: descripción corta del proyecto y tecnologías usadas.</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Ver demo</a>
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </div>
-        </article>
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section-alt">
+      <div class="container">
+        <h2>Nuestros servicios</h2>
+        <div class="services-grid" id="services-grid">
+          <!-- Tarjetas generadas dinámicamente desde content/site.json -->
+        </div>
       </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section container">
-      <h2>Habilidades</h2>
-      <ul class="skills-list">
-        <li>TODO: Habilidad 1</li>
-        <li>TODO: Habilidad 2</li>
-        <li>TODO: Habilidad 3</li>
-        <li>TODO: Habilidad 4</li>
-        <li>TODO: Habilidad 5</li>
-      </ul>
     </section>
 
     <!-- CONTACTO -->
     <section id="contacto" class="section container">
       <h2>Contacto</h2>
-      <p>TODO: breve invitación a contactarte.</p>
-      <ul class="contact-links">
-        <li><a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
-        <li><a href="https://www.linkedin.com/in/usuario" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://github.com/usuario" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>¿Tiene un proyecto en mente? Escríbanos y le responderemos a la brevedad.</p>
+          <ul class="contact-details">
+            <li><strong>Dirección:</strong> <span id="contact-address"></span></li>
+            <li><strong>Correo:</strong> <a id="contact-email" href="#"></a></li>
+            <li><strong>Teléfono:</strong> <a id="contact-phone" href="#"></a></li>
+            <li><strong>Atención:</strong> <span id="contact-name"></span> — <span id="contact-role"></span></li>
+          </ul>
+          <a href="#" id="contact-whatsapp-btn" class="btn btn-whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+
+        <form class="contact-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contacto" />
+          <p class="hidden-field"><label>No llenar: <input name="bot-field" /></label></p>
+
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Teléfono (opcional)</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>&copy; <span id="year"></span> Tu Nombre. Todos los derechos reservados.</p>
+  <a href="#" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.65.86 5.1 2.317 7.086L4.8 28.2l6.276-1.65a11.94 11.94 0 0 0 4.925 1.05h.005c6.628 0 12-5.373 12-12.001C28.006 8.373 22.63 3 16.001 3zm7.006 17.13c-.297.833-1.47 1.53-2.412 1.732-.64.137-1.474.246-4.29-.918-3.604-1.49-5.926-5.144-6.108-5.386-.176-.242-1.463-1.945-1.463-3.71 0-1.766.926-2.633 1.254-2.994.328-.36.716-.45.955-.45.238 0 .478.002.687.013.22.01.516-.083.807.615.297.712 1.01 2.46 1.098 2.64.088.18.146.39.03.632-.117.242-.176.39-.35.6-.176.21-.37.47-.528.63-.176.176-.36.367-.155.72.206.352.914 1.508 1.963 2.442 1.35 1.204 2.49 1.577 2.842 1.753.352.176.557.147.762-.088.206-.235.88-1.026 1.115-1.38.235-.352.47-.293.79-.176.322.117 2.05.967 2.402 1.143.352.176.586.264.674.41.088.147.088.85-.21 1.683z"/></svg>
+  </a>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> CIDATEL S.A.S. — NIT <span id="footer-nit"></span> — Bogotá, Colombia</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
