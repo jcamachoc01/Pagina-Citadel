@@ -100,7 +100,7 @@ h1, h2, h3 {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary-light) 0%, #ffffff 65%);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-bg) 65%);
   border-bottom: 4px solid var(--color-accent);
   padding: 5rem 0;
 }
