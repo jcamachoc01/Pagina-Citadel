@@ -25,8 +25,7 @@ auth:
   avatar_url_claim: avatar_url
 
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
-# Cambiar a https://cidatel.co cuando el dominio apunte a Netlify.
-site_url: https://clever-cuchufli-c00cce.netlify.app
+site_url: https://cidatel.co
 
 # Netlify sirve estos archivos estáticos directamente (sin build), por eso publish_mode
 # no aplica un generador de sitio: el JSON editado se lee en vivo desde js/main.js.
