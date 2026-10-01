@@ -2,7 +2,9 @@
   "company": { "name": "CIDATEL S.A.S.", "tagline": "Soluciones Integrales en Infraestructura", "nit": "900.931.795-5" },
   "hero": {
     "title": "Soluciones Integrales en Infraestructura",
-    "subtitle": "Diseño, construcción, consultoría y mantenimiento en ingeniería eléctrica, telecomunicaciones y seguridad electrónica para proyectos industriales, comerciales, residenciales e institucionales."
+    "subtitle": "Diseño, construcción, consultoría y mantenimiento en ingeniería eléctrica, telecomunicaciones y seguridad electrónica para proyectos industriales, comerciales, residenciales e institucionales.",
+    "cta_primary": "Cotiza tu proyecto",
+    "cta_secondary": "Conoce los servicios"
   },
   "about": {
     "title": "Quiénes somos",

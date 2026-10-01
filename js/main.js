@@ -88,6 +88,8 @@ function revealServices() {
 function renderContent(data) {
   document.getElementById("hero-title").textContent = data.hero.title;
   document.getElementById("hero-subtitle").textContent = data.hero.subtitle;
+  document.getElementById("hero-whatsapp").textContent = data.hero.cta_primary;
+  document.getElementById("hero-services").textContent = data.hero.cta_secondary;
   document.getElementById("about-title").textContent = data.about.title;
   document.getElementById("about-text").textContent = data.about.text;
   document.getElementById("mission-text").textContent = data.mission;
