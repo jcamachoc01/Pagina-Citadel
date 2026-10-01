@@ -1,59 +1,25 @@
 {
-  "company": {
-    "name": "CIDATEL S.A.S.",
-    "tagline": "Soluciones Integrales en Infraestructura",
-    "nit": "900.931.795-5"
-  },
+  "company": { "name": "CIDATEL S.A.S.", "tagline": "Soluciones Integrales en Infraestructura", "nit": "900.931.795-5" },
   "hero": {
     "title": "Soluciones Integrales en Infraestructura",
-    "subtitle": "Diseño, construcción, consultoría y mantenimiento en Ingeniería Eléctrica, Telecomunicaciones y Seguridad Electrónica para proyectos industriales, comerciales, residenciales e institucionales.",
-    "cta_primary": "Cotiza tu proyecto por WhatsApp",
-    "cta_secondary": "Ver servicios"
+    "subtitle": "Diseño, construcción, consultoría y mantenimiento en ingeniería eléctrica, telecomunicaciones y seguridad electrónica para proyectos industriales, comerciales, residenciales e institucionales."
   },
   "about": {
     "title": "Quiénes somos",
-    "text": "Somos una empresa 100% colombiana constituida en 2016, dedicada al diseño, construcción, consultoría y mantenimiento de proyectos en el ámbito Eléctrico y de las Telecomunicaciones, integrando soluciones informáticas pasivas y activas, y el software acorde a las necesidades de cada cliente. Trabajamos con honestidad, respeto y cumplimiento para forjar alianzas perdurables en el tiempo."
+    "text": "Somos una empresa 100% colombiana constituida en 2016, dedicada al diseño, construcción, consultoría y mantenimiento de proyectos eléctricos y de telecomunicaciones. Integramos soluciones informáticas pasivas y activas, junto con el software adecuado para las necesidades de cada cliente. Trabajamos con honestidad, respeto y cumplimiento para construir alianzas perdurables."
   },
-  "mission": "Ofrecer a nuestros clientes soluciones integrales, efectivas y confiables en Ingeniería Eléctrica, Telecomunicaciones y Tecnologías de Información, cumpliendo sus expectativas a través de un equipo humano capacitado, con el compromiso permanente del mejoramiento continuo en todos nuestros procesos.",
-  "vision": "Ser una empresa reconocida por sus mejores prácticas y líder en el mercado de los servicios profesionales de Ingeniería Eléctrica, Telecomunicaciones y Tecnologías de Información, con un equipo humano talentoso, idóneo y comprometido con la familia CIDATEL S.A.S.",
+  "mission": "Ofrecer a nuestros clientes soluciones integrales, efectivas y confiables en ingeniería eléctrica, telecomunicaciones y tecnologías de información, cumpliendo sus expectativas a través de un equipo humano capacitado y comprometido con el mejoramiento continuo.",
+  "vision": "Ser una empresa reconocida por sus buenas prácticas y líder en el mercado de servicios profesionales de ingeniería eléctrica, telecomunicaciones y tecnologías de información, con un equipo humano talentoso, idóneo y comprometido con la familia CIDATEL S.A.S.",
   "services": [
-    {
-      "icon": "bolt",
-      "title": "Sistema Eléctrico",
-      "description": "Instalaciones eléctricas internas de baja y media tensión para ambientes industriales, comerciales y residenciales."
-    },
-    {
-      "icon": "network",
-      "title": "Telecomunicaciones",
-      "description": "Cableado estructurado en cobre y fibra óptica para voz, datos y video, bajo normas ISO/IEC y ANSI/EIA/TIA, con certificación de cada línea instalada."
-    },
-    {
-      "icon": "shield",
-      "title": "Control de Acceso",
-      "description": "Control de acceso peatonal y vehicular con lectoras de proximidad, biométricas, torniquetes y talanqueras, con registro detallado de ingresos y egresos."
-    },
-    {
-      "icon": "flame",
-      "title": "Detección de Incendios",
-      "description": "Detección automática de humo, calor y llama, con notificación y alarma mediante luces estroboscópicas, sirenas y campanas."
-    },
-    {
-      "icon": "camera",
-      "title": "Video Vigilancia",
-      "description": "Sistemas de CCTV análogos e IP, alámbricos e inalámbricos, con monitoreo local y remoto desde cualquier parte del mundo."
-    },
-    {
-      "icon": "server",
-      "title": "Datacenter y Equipos Activos",
-      "description": "Suministro, montaje y mantenimiento de switches, routers, servidores, UPS y plantas eléctricas, incluyendo diseño de datacenter."
-    }
+    { "icon": "bolt", "image": "assets/img/servicio-electrico.jpg", "image_alt": "Tablero eléctrico con cableado y borneras", "title": "Sistema eléctrico", "description": "Instalaciones eléctricas internas de baja y media tensión para ambientes industriales, comerciales y residenciales." },
+    { "icon": "network", "image": "assets/img/servicio-telecomunicaciones.jpg", "image_alt": "Conectores de red y fibra óptica iluminada", "title": "Telecomunicaciones", "description": "Cableado estructurado en cobre y fibra óptica para voz, datos y video, con certificación de cada línea instalada." },
+    { "icon": "shield", "image": "assets/img/servicio-control-acceso.jpg", "image_alt": "Persona usando un lector biométrico de acceso", "title": "Control de acceso", "description": "Control peatonal y vehicular con lectoras de proximidad, biométricas, torniquetes y talanqueras." },
+    { "icon": "flame", "image": "assets/img/servicio-incendios.jpg", "image_alt": "Detector de incendios instalado en un ambiente industrial", "title": "Detección de incendios", "description": "Detección automática de humo, calor y llama, con sistemas de notificación y alarma." },
+    { "icon": "camera", "image": "assets/img/servicio-videovigilancia.jpg", "image_alt": "Cámaras de videovigilancia instaladas en un muro", "title": "Videovigilancia", "description": "Sistemas de CCTV análogos e IP, alámbricos e inalámbricos, con monitoreo local y remoto." },
+    { "icon": "server", "image": "assets/img/servicio-datacenter.jpg", "image_alt": "Racks con servidores y equipos de red", "title": "Datacenter y equipos activos", "description": "Suministro, montaje y mantenimiento de switches, routers, servidores, UPS y plantas eléctricas." }
   ],
   "contact": {
-    "address": "Calle 135 A No. 104 - 28 Of. 303, Bogotá, Colombia",
-    "email": "jcamacho@cidatel.co",
-    "phone_display": "315 353 9092",
-    "whatsapp_number": "573153539092",
-    "contact_name": "Javier Camacho",
-    "contact_role": "Gerente General"
+    "address": "Calle 135 A No. 104 - 28 Of. 303, Bogotá, Colombia", "email": "jcamacho@cidatel.co",
+    "phone_display": "315 353 9092", "whatsapp_number": "573153539092", "contact_name": "Javier Camacho", "contact_role": "Gerente General"
   }
 }

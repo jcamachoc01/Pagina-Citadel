@@ -8,9 +8,15 @@ const ICONS = {
 };
 
 async function loadContent() {
-  const res = await fetch("content/site.json");
-  const data = await res.json();
-  renderContent(data);
+  try {
+    const res = await fetch("content/site.json");
+    if (!res.ok) throw new Error(`No se pudo cargar el contenido (${res.status})`);
+    const data = await res.json();
+    renderContent(data);
+  } catch (error) {
+    console.error(error);
+    document.getElementById("services-grid").innerHTML = '<p class="content-error">No fue posible cargar los servicios. Por favor, recarga la página.</p>';
+  }
 }
 
 function whatsappUrl(number, text) {
@@ -19,11 +25,31 @@ function whatsappUrl(number, text) {
 
 function renderServiceCard(service) {
   const article = document.createElement("article");
-  article.className = "service-card";
+  article.className = "service-card reveal-service";
+
+  const media = document.createElement("div");
+  media.className = "service-media";
+
+  const image = document.createElement("img");
+  image.src = service.image;
+  image.alt = service.image_alt || service.title;
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.width = 720;
+  image.height = 440;
+  image.addEventListener("error", () => {
+    media.classList.add("image-unavailable");
+    image.remove();
+  }, { once: true });
 
   const iconWrap = document.createElement("div");
   iconWrap.className = "service-icon";
   iconWrap.innerHTML = ICONS[service.icon] || ""; // fixed set of trusted icons, not user data
+
+  media.append(image, iconWrap);
+
+  const body = document.createElement("div");
+  body.className = "service-body";
 
   const title = document.createElement("h3");
   title.textContent = service.title;
@@ -31,8 +57,32 @@ function renderServiceCard(service) {
   const desc = document.createElement("p");
   desc.textContent = service.description;
 
-  article.append(iconWrap, title, desc);
+  body.append(title, desc);
+  article.append(media, body);
   return article;
+}
+
+function revealServices() {
+  const cards = document.querySelectorAll(".reveal-service");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    cards.forEach((card) => card.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.16 });
+
+  cards.forEach((card, index) => {
+    card.style.setProperty("--reveal-delay", `${(index % 3) * 90}ms`);
+    observer.observe(card);
+  });
 }
 
 function renderContent(data) {
@@ -45,6 +95,7 @@ function renderContent(data) {
 
   const grid = document.getElementById("services-grid");
   grid.replaceChildren(...data.services.map(renderServiceCard));
+  revealServices();
 
   const c = data.contact;
   document.getElementById("contact-address").textContent = c.address;
@@ -81,6 +132,13 @@ navLinks.querySelectorAll("a").forEach((link) => {
     navLinks.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
   });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
 });
 
 loadContent();

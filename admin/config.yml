@@ -63,6 +63,8 @@ collections:
                   - { label: "Llama (incendios)", value: "flame" }
                   - { label: "Cámara (video vigilancia)", value: "camera" }
                   - { label: "Servidor (datacenter)", value: "server" }
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Texto alternativo de la imagen", name: "image_alt", widget: "string", required: false }
               - { label: "Título", name: "title", widget: "string" }
               - { label: "Descripción", name: "description", widget: "text" }
 
