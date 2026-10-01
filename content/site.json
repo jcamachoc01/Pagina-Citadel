@@ -62,7 +62,11 @@
   ],
   "contact": {
     "address": "Calle 135 A No. 104 - 28 Of. 303, Bogotá, Colombia",
-    "email": "jcamacho@cidatel.co / amonroy@cidatel.co Corrreo alterno:  jcamachoc1@gmail.com",
+    "email": "jcamacho@cidatel.co",
+    "extra_emails": [
+      { "label": "Correo", "email": "amonroy@cidatel.co" },
+      { "label": "Correo alterno", "email": "jcamachoc1@gmail.com" }
+    ],
     "phone_display": "315 353 9092",
     "whatsapp_number": "573153539092",
     "contact_name": "Javier Camacho",

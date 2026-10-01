@@ -95,7 +95,22 @@ collections:
             widget: "object"
             fields:
               - { label: "Dirección", name: "address", widget: "string" }
-              - { label: "Correo", name: "email", widget: "string" }
+              - label: "Correo principal"
+                name: "email"
+                widget: "string"
+                pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', "Un solo correo, ej. nombre@cidatel.co. Los demás van en Correos adicionales"]
+              - label: "Correos adicionales"
+                name: "extra_emails"
+                widget: "list"
+                required: false
+                label_singular: "Correo"
+                summary: "{{label}}: {{email}}"
+                fields:
+                  - { label: "Etiqueta (ej. Correo alterno)", name: "label", widget: "string", default: "Correo" }
+                  - label: "Correo"
+                    name: "email"
+                    widget: "string"
+                    pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', "Un solo correo, ej. nombre@cidatel.co"]
               - { label: "Teléfono (texto a mostrar)", name: "phone_display", widget: "string" }
               - label: "WhatsApp (solo números, con código de país, ej. 573153539092)"
                 name: "whatsapp_number"

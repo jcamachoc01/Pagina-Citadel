@@ -85,6 +85,20 @@ function revealServices() {
   });
 }
 
+function renderExtraEmails(mainEmailItem, extraEmails) {
+  const items = extraEmails.filter((entry) => entry.email).map((entry) => {
+    const li = document.createElement("li");
+    const label = document.createElement("span");
+    label.textContent = entry.label || "Correo";
+    const link = document.createElement("a");
+    link.href = `mailto:${entry.email}`;
+    link.textContent = entry.email;
+    li.append(label, link);
+    return li;
+  });
+  mainEmailItem.after(...items);
+}
+
 function renderContent(data) {
   document.getElementById("hero-title").textContent = data.hero.title;
   document.getElementById("hero-subtitle").textContent = data.hero.subtitle;
@@ -104,6 +118,7 @@ function renderContent(data) {
   const emailLink = document.getElementById("contact-email");
   emailLink.textContent = c.email;
   emailLink.href = `mailto:${c.email}`;
+  renderExtraEmails(emailLink.closest("li"), c.extra_emails || []);
   const phoneLink = document.getElementById("contact-phone");
   phoneLink.textContent = c.phone_display;
   phoneLink.href = `tel:+${c.whatsapp_number}`;
